@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk7m2r8xp4q1a"]
+
+[ext_resource type="Script" path="res://rock.gd" id="1_rock"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rock"]
+radius = 20.0
+
+[node name="Rock" type="Area2D"]
+script = ExtResource("1_rock")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_rock")
+
+[node name="Sprite" type="ColorRect" parent="."]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+color = Color(0.6, 0.3, 0.2, 1)

@@ -1,0 +1,29 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot-specific ignores
+*.translation
+
+# Imported textures and samples
+.import/
+
+# Build exports
+export/
+exports/
+*.exe
+*.x86_64
+*.pck
+
+# Mono/C# ignores
+.mono/
+data_*/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE stuff
+.idea/
+.vscode/
+*.swp
+*.swo
